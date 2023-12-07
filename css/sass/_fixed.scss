@@ -211,6 +211,14 @@
 	}
 }
 
+.translate-x-50-neg {
+	transform: translateX(-50%);
+}
+
+.fixed-btn-ipads {
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
+}
+
 .hero-video {
 	&.is-playing {
 		&.is-pause {
