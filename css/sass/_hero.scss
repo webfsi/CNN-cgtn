@@ -1,0 +1,280 @@
+.hero {
+	min-height: 650px;
+	padding: 165px 30px 0 0;
+    padding: heightPx(165) 30px 0;
+    background: #E1DAD0;
+
+    &_wrap {
+        overflow: hidden;
+    }
+
+    &_bg {
+        pointer-events: none;
+
+        &-main {
+            margin: calc(0vh - (937px - 100vh) * -0.3) 0 0;
+
+            div {
+                height: 77vw;
+                background: url('../images/hero.png') no-repeat right 13vh / 111% auto;
+                background-position: right bottom calc(-33vh - (937px - 100vh) * 0.6);
+
+                background-position: right bottom;
+                // transform: translateY(calc(15vh - (937px - 100vh) * 0.6));
+                margin: calc(15vh - (937px - 100vh) * 0.6) 0 0;
+                top: calc(0vw - (1440px - 100vw) * -0.3);   
+            }
+
+            @media (max-height: 700px) {
+                margin: calc(0vh - (937px - 100vh) * -0.1) 0 0;
+
+                div {
+                    background-size: 105% auto;
+                }
+            }
+
+            @media (max-height: 600px) {
+                margin: 0;
+
+                div {
+                    background-size: 100% auto;
+                }
+            }
+
+        }
+
+        &-ship {
+            position: absolute;
+            z-index: 2;
+            bottom: heightPx(40);
+            right: heightPx(125);
+            width: 387px;
+            height: 303px;
+            // padding-top: 78.2%;
+            background: url('../images/hero-ship.png') no-repeat center / cover;
+
+            @media (max-height: 600px) {
+                width: 300px;
+                height: 234.6px;
+                bottom: heightPx(120);
+            }
+        }
+    }
+
+	&_logo {
+		width: 97px;
+		top: 90px;
+		left: 30px;
+        z-index: 20;
+
+        &.-hub {
+            width: 120px;
+        }
+	}
+
+	&_header {
+		p {
+			font-size: 40px;
+            font-size: min(heightPx(40), 40px);
+            margin: heightPx(10) 0 0;
+		}
+	}
+
+    .title-main {
+        font-size: min(heightPx(130), 130px);
+    }
+
+    @media (max-height: 700px) and (min-width: 1150px) {
+        padding: 100px 30px 0 0;
+        // background-size: 100% auto;
+        // background-position: center -9vh;
+
+        .title-main {
+            font-size: 90px;
+        }
+
+        &_header p {
+            font-size: 25px;
+        }
+    }
+
+    @media (max-height: 700px) and (max-width: 1149px) {
+        padding: 21vh 30px 0 0 !important;
+
+        .title-main {
+            font-size: 70px;
+        }
+
+        &_header p {
+            font-size: 20px;
+        }
+    }
+
+    &-3 {
+        min-height: 650px;
+
+        &_header {
+            z-index: 1;
+            position: relative;
+            padding: 19vh 0 0 32px;
+
+            @include mobile {
+                padding: 24vh 0 0 15px;
+            }
+        }
+
+        &_title-small {
+            font-size: 110px;
+            line-height: 0.8;
+            display: block;
+        }
+
+        &-wrap div {
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+        
+        &_desk {
+            width: 684px;
+            height: 287px;
+            top: 44%;
+        }
+
+        &_servent {
+            width: 244px;
+            height: 509px;
+            top: 42%;
+            left: 8%;
+        }
+
+        &_left-scholars {
+            width: 542px;
+            height: 646px;
+            top: 30%;
+            left: 46%;
+            z-index: 1;
+        }
+
+        &_hand {
+            width: 15%;
+            height: 148px;
+            top: 20.7%;
+            left: 33.5%;
+        }
+
+        &_right-scholars {
+            width: 490px;
+            height: 583px;
+            top: 18%;
+            left: 66%;
+        }
+
+        @media (max-width: 1210px) and (orientation: landscape), (max-width: 1023px) and (orientation: portrait) { //and (not (min-width: 1023px) and (orientation: portrait)
+            &_desk {
+                width: 484px;
+                top: 50%;
+            }
+    
+            &_servent {
+                width: 184px;
+                top: 50%;
+            }
+    
+            &_left-scholars {
+                width: 352px;
+                height: 431px;
+                top: 40%;
+            }
+    
+            &_right-scholars {
+                width: 330px;
+                top: 28%;
+            }
+        }
+
+        @media (orientation: portrait) and (min-width: 1024px) {
+            &_left-scholars {
+                top: 52%;
+                left: 25%;
+            }
+
+            &_right-scholars {
+                top: 43%;
+                left: 51%;
+            }
+        }
+
+        @include tablet-portrait {
+            &_desk {
+                top: 44%;
+            }
+    
+            &_servent {
+                top: 42%;
+            }
+    
+            &_left-scholars {
+                top: 51%;
+                left: 40%;
+            }
+    
+            &_right-scholars {
+                top: 40%;
+                left: 60%;
+            }
+        }
+
+        @include mobile {
+            &_desk {
+                width: 250px;
+            }
+    
+            &_servent {
+                width: 83px;
+            }
+    
+            &_left-scholars {
+                top: 51%;
+                left: 23%;
+                width: 224px;
+                height: 270px;
+            }
+    
+            &_right-scholars {
+                top: 40%;
+                left: 48%;
+                width: 205px;
+            }
+        }
+    }
+}
+
+.title-a3 {
+    @media (max-height: 937px) and (min-width: 1024px) {
+        font-size: 13.9vh;
+    }
+
+    .hero-3_title-small {
+        font-size: 0.85em;
+    }
+
+    @include tablet-portrait {
+        font-size: 100px;
+    }
+
+    @include mobile {
+        font-size: 46px;
+    }
+}
+
+@include mobile {
+    .hero-3 {
+        &_bg-main div {
+            background-position: 82% center !important;
+        }
+    }
+}
+
+
+

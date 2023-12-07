@@ -1,0 +1,71 @@
+{
+
+	"tabWidth": 3,
+	"singleQuote": true,
+	"useTabs": true,
+	// "jsxBracketSameLine": true,
+	"jsxSingleQuote": false,
+	"semi": true,
+	"trailingComma": "none",
+	"bracketSpacing": true,
+	// "printWidth": 200,
+	"proseWrap": "always",
+	"htmlWhitespaceSensitivity": "css",
+	"endOfLine": "lf",
+	// "bracketSameLine": true,
+	"arrowParens": "always"
+
+
+	"tabWidth": 2,
+	"singleQuote": true,
+	"useTabs": true,
+	"jsxBracketSameLine": true,
+	"jsxSingleQuote": false,
+	"semi": true,
+	"trailingComma": "none",
+	"bracketSpacing": true,
+	"proseWrap": "always",
+	"htmlWhitespaceSensitivity": "ignore",
+	// "printWidth": 80,
+	"arrowParens": "always",
+	"endOfLine": "lf",
+	"bracketSameLine": true
+
+	// "printWidth": 80,                 // Максимальна довжина рядка, після якої Prettier переносить текст на новий рядок
+	// "tabWidth": 2,                    // Кількість пробілів в табуляції
+	// "useTabs": false,                 // Використовувати таби замість пробілів для відступів
+	// "semi": true,                     // Використовувати крапку з комою в кінці виразів
+	// "singleQuote": false,             // Використовувати одинарні кавички замість подвійних
+
+	// "quoteProps": "as-needed",        // Форматування властивостей об'єктів: "as-needed", "consistent", "preserve"
+		// "as-needed" (за замовчуванням): кавички використовуються тільки коли необхідно.
+		// Наприклад: { 'foo-bar': true, foo: true }
+		// "consistent": якщо хоч одна властивість в об'єкті вимагає кавичок, то всі властивості отримують кавички.
+		// Наприклад: { 'foo-bar': true, 'foo': true }
+
+	// "preserve": кавички зберігаються так, як були вихідно написані.
+	// Наприклад: якщо вхідний код має { "foo-bar": true, foo: true }, він залишиться незмінним.
+	// "jsxSingleQuote": false,          // Використовувати одинарні кавички в JSX
+	// "trailingComma": "es5",           // Використовувати коми після останнього елемента: "none", "es5", "all"
+	// "bracketSpacing": true,           // Пробіли між дужками в об'єктних літералах
+	// "jsxBracketSameLine": false,      // Розміщення закриваючої дужки JSX-тегів на тому ж рядку
+	// "arrowParens": "always",          // Завжди використовувати круглі дужки навколо аргументів стрілкових функцій
+	// "rangeStart": 0,                  // Початок діапазону форматування
+	// "rangeEnd": Infinity,             // Кінець діапазону форматування
+
+	// "parser": "",                     // Вказує парсер, який буде використовувати Prettier
+		// 	parser
+		// Вказує Prettier, який парсер використовувати для форматування файлів.
+		// Може бути "babel", "flow", "typescript" та інші.
+		// Зазвичай Prettier сам визначає потрібний парсер, але це налаштування дозволяє вам вказати його явно.
+
+	// "filepath": "",                   // Шлях до файлу, який буде використовувати Prettier для визначення парсера
+	// "requirePragma": false,           // Форматувати тільки файли з особливим коментарем на початку
+	// "insertPragma": false,            // Додавати особливий коментар на початок файлів після форматування
+	// "proseWrap": "preserve",          // Обгортання Markdown тексту: "always", "never", "preserve"
+	// "htmlWhitespaceSensitivity": "css", // Чутливість до пробілів в HTML: "css", "strict", "ignore"
+	// "vueIndentScriptAndStyle": false, // Відступи в тегах <script> і <style> в Vue файлах
+	// "endOfLine": "lf",                // Кінець рядка: "lf", "crlf", "cr", "auto"
+	// "embeddedLanguageFormatting": "auto", // Форматування вмонтованих мов: "auto", "off"
+	// "bracketSameLine": false          // Розміщення закриваючої дужки HTML/XML тегу на тому ж рядку
+}
